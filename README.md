@@ -2,17 +2,22 @@
 
 <span style="color:#ff2121">记录我的学习笔记，分享一些好的示例代码，记录自己踩过的每一个坑。</span>
 
+**项目及学习代码 [aBadString-Full-Stack](https://gitee.com/abadstring-full-stack)**
+
 - **Java 核心基础**
   - [Java 基础编程](01_Java核心基础/01_Java基础编程.md)
   - [Java 并发编程](01_Java核心基础/02_Java并发编程.md)
   - [Java 虚拟机](01_Java核心基础/03_Java虚拟机.md)
   - [Spring 框架](01_Java核心基础/04_Spring.md)
+  - [Spring Cloud 微服务](https://gitee.com/abadstring-full-stack/spring-cloud#git-readme)
   - [Java 实用编程](01_Java核心基础/05_Java实用编程.md)
 
 - **JavaScript 核心基础**
   - [JavaScript 基础编程](02_JavaScript核心基础/01_JavaScript基础编程.md)
   - [HTML 和 CSS 基础](02_JavaScript核心基础/02_HTML和CSS基础.md)
   - [组件化框架](02_JavaScript核心基础/03_组件化框架.md)
+  - [UmiJS](https://gitee.com/abadstring-full-stack/haoke#1-umijs)
+  - [Ant Design Pro](https://gitee.com/abadstring-full-stack/haoke#4-ant-design-pro)
 
 - **C/C++ 核心基础**
   - [C 语言基础编程](03_C与C++核心基础/01_C语言基础编程.md)
@@ -29,6 +34,8 @@
 - **数据库与中间件基础**
   - [MySQL 数据库](05_数据库与中间件基础/01_MySQL.md)
   - [Redis 非关系型数据库](05_数据库与中间件基础/02_Redis.md)
+  - [MongoDB](https://gitee.com/abadstring-full-stack/haoke#13-mongodb)
+  - [Elasticsearch](https://gitee.com/abadstring-full-stack/haoke#15-elasticsearch)
 
 - **实用工具**
   - [开发工具](06_实用工具/01_开发工具.md)
