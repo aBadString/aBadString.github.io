@@ -43,6 +43,10 @@
   - [LaTeX](06_实用工具/03_LaTeX.md)
   - [面向计算机科学的数理逻辑](06_实用工具/04_面向计算机科学的数理逻辑.md)
 
+- **项目实战**
+  - [酒店管理系统（SSM）](https://gitee.com/abadstring-full-stack/HotelManagementSystem)
+  - [在线音乐（C#, .NET Core, Android, Qt）](https://gitee.com/msin-Music-Store)
+  - [好客租房（Dubbo, ELK）](https://gitee.com/abadstring-full-stack/haoke)
 
 <!-- 
 算法：
