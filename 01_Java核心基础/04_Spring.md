@@ -2593,10 +2593,9 @@ public class InterceptorConfiguration implements WebMvcConfigurer {
 public class ParameterController {
 
     // 获取 Query String 参数
-    // 默认可不写 @RequestParam
     // /querystring?code=2020
     @GetMapping("/querystring")
-    public String getQueryString(/*@RequestParam*/ Integer code) {
+    public String getQueryString(@RequestParam Integer code) {
         return "路径参数: code=" + code;
     }
 
@@ -2686,6 +2685,21 @@ public class RequestController {
                 + "code= " + request.getAttribute("code");
     }
 }
+```
+
+**为什么有的需要加 @RequestBody, 有的不需要**. 加与不加的区别如下:
+- 加 @RequestBody: 当请求 content_type = application/json 数据类型为 json 时, json 格式如下：{"aaa":"111","bbb":"222"}
+- 不加 @RequestBody: 当请求 content_type = application/x-www-form-urlencoded 或 multipart/form-data 时, 数据格式为 aaa=111&bbb=222
+```java
+// http://localhost:8081/admin/hospital/?pageNum=1&pageSize=2&hoscode=1&hosname=aBadString
+// pageNum: 1, pageSize: 2, hospitalQuery: HospitalQuery(hosname=aBadString, hoscode=1)
+@GetMapping
+Result<IPage<Hospital>> selectPage(
+        @RequestParam(defaultValue = "1") Integer pageNum,
+        @RequestParam(defaultValue = "10") Integer pageSize,
+        // 这里不能加 @RequestParam, 更不能加 @RequestBody
+        HospitalQuery hospitalQuery
+);
 ```
 
 **@MatrixVariable 矩阵变量**
